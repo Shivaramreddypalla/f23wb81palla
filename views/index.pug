@@ -5,6 +5,7 @@ block content
   p Welcome to Web Apps #{title}
   button(type="button" class="btn btn-secondary" onclick="goFaster()") Press Me
   br
+  a(href='http://localhost:3000/Watch') Click Here to Visit Watch Website
   div#faster Increase the speed 
   script.
     let mph = 20;
@@ -14,4 +15,3 @@ block content
       change += 1;
       document.getElementById('faster').textContent = `MPH ${mph} with change ${change}`;
     }
-    a(href='http://localhost:3000/watch') Click Here to Visit Watch Website
